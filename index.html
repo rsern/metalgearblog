@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metal Gear Codec Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="codec-container">
+    <div class="character left">
+      <img id="leftCharacter" src="snake.png" alt="Snake" />
+    </div>
+    <div class="codec-center">
+      <div class="voice-bars" id="voiceBars"></div>
+      <div class="dialog-box" id="dialogBox"></div>
+      <button id="nextButton">Next</button>
+    </div>
+    <div class="character right">
+      <img id="rightCharacter" src="otacon.png" alt="Otacon" />
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="bgm" loop>
+    <source src="bgm.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="codec" preload="auto">
+    <source src="codec.wav" type="audio/wav">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
